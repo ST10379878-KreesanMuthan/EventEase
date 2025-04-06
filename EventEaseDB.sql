@@ -34,9 +34,9 @@ INSERT INTO Venue(VenueName,Capacity,ImageURL)
 VALUES ('Varsity Collage','1000','https://cdn-9.motorsport.com/images/mgl/0ZR74Db0/s800/marc-marquez-ducati-team.jpg'),
 ('Mall of Africa','1500','https://cdn-9.motorsport.com/images/mgl/0ZR74Db0/s800/marc-marquez-ducati-team.jpg')
 
-INSERT INTO [Event](EventName,EventDate,[Description])
-VALUES ('Hackothon','12 February 2025','IT competition for all degree years.'),
-('OWeek','1 March 2025','Get to know your campus.')
+INSERT INTO [Event](VenueID,EventName,EventDate,[Description])
+VALUES (1,'Hackothon','12 February 2025','IT competition for all degree years.'),
+(1,'OWeek','1 March 2025','Get to know your campus.')
 
 
 INSERT INTO Booking(VenueID,EventID,BookingDate)
