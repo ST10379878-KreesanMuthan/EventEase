@@ -1,3 +1,7 @@
+using EventEaseWebApp.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+
 namespace EventEaseWebApp
 {
     public class Program
@@ -8,6 +12,11 @@ namespace EventEaseWebApp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            //Register database context
+            builder.Services.AddDbContext<EventEaseDBContext>(options =>
+
+            options.UseSqlServer(builder.Configuration.GetConnectionString("LocalConn")));
 
             var app = builder.Build();
 
