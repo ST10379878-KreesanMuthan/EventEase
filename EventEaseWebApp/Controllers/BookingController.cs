@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using EventEaseWebApp.Data;
 using EventEaseWebApp.Models;
 
+// Made use of learn.microsoft to create a controller 
+// URL: https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/controllers-and-routing/creating-a-controller-cs
 namespace EventEaseWebApp.Controllers
 {
     public class BookingController : Controller

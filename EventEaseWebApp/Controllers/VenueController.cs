@@ -10,6 +10,8 @@ using EventEaseWebApp.Models;
 
 namespace EventEaseWebApp.Controllers
 {
+    // Made use of learn.microsoft to create a controller 
+    // URL: https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/controllers-and-routing/creating-a-controller-cs
     public class VenueController : Controller
     {
         private readonly EventEaseDBContext _context;
